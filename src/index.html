@@ -1,16 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <img src="./img/webpack.svg" alt="Webpack Logo" width="200px" />
-    <h3>Welcome to Webpack 4 starter </h3>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <title>CPS</title>
+</head>
+
+<body>
+  <aside class="sidebar">
+    <div class="sidebar__container">
+      <div class="sidebar__header">
+        <button class="sidebar__close btn" type="button">
+          <svg>
+            <use xlink:href="img/svg/sprite.svg#close-btn"></use>
+          </svg>
+        </button>
+        <a href="#" class="sidebar__logo">
+          <img src="img/cps-logo.svg" alt="Логотип сайта">
+        </a>
+        <button class="sidebar__search btn" type="button">
+          <svg>
+            <use xlink:href="img/svg/sprite.svg#search-btn"></use>
+          </svg>
+        </button>
+      </div>
+      <nav class="sidebar__nav nav-services">
+        <ul class="nav-services__list list-reset">
+          <li class="nav-services__item nav-services__item--active">
+            <a href="#">Ремонт техники</a>
+          </li>
+          <li class="nav-services__item">
+            <a href="#">Услуги и сервисы</a>
+          </li>
+          <li class="nav-services__item">
+            <a href="#">Корпоративным клиентам</a>
+          </li>
+          <li class="nav-services__item">
+            <a href="#">Продавцам техники</a>
+          </li>
+          <li class="nav-services__item">
+            <a href="#">Партнерам</a>
+          </li>
+          <li class="nav-services__item">
+            <a href="#">Производителям</a>
+          </li>
+          <li class="nav-services__item">
+            <a href="#">Наши сервисные центры</a>
+          </li>
+          <li class="nav-services__item">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="sidebar__bottom">
+        <div class="sidebar__contacts">
+          <div class="sidebar__btn-contacts contacts">
+            <button class="contacts__btn btn" type="button">
+              <svg>
+                <use xlink:href="img/svg/sprite.svg#call"></use>
+              </svg>
+            </button>
+            <button class="contacts__btn btn" type="button">
+              <svg>
+                <use xlink:href="img/svg/sprite.svg#chat"></use>
+              </svg>
+            </button>
+            <button class="contacts__btn btn" type="button">
+              <svg>
+                <use xlink:href="img/svg/sprite.svg#profile"></use>
+              </svg>
+            </button>
+          </div>
+          <a href="mailto:mail@cps.com" class="sidebar__link mail-link">mail@cps.com</a>
+          <a href="tel:+88008908900" class="sidebar__link tel-link">8 800 890 8900</a>
+        </div>
+        <div class="sidebar__lang lang">
+          <button class="lang__btn btn" type="button">RU</button>
+          <button class="lang__btn btn " type="button">EN</button>
+          <button class="lang__btn btn" type="button">CH</button>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <header class="header">
+    <div class="header__container container">
+      <button class="header__burger-btn burger-btn btn" type="button">
+        <svg>
+          <use xlink:href="img/svg/sprite.svg#burger"></use>
+        </svg>
+      </button>
+      <a href="#" class="header__logo">
+        <img src="img/cps-logo.svg" alt="Логотип сайта">
+      </a>
+      <div class="header__btns-contact contacts">
+        <button class="contacts__btn btn" type="button">
+          <svg>
+            <use xlink:href="img/svg/sprite.svg#call"></use>
+          </svg>
+        </button>
+        <button class="contacts__btn btn" type="button">
+          <svg>
+            <use xlink:href="img/svg/sprite.svg#chat"></use>
+          </svg>
+        </button>
+        <button class="contacts__btn btn" type="button">
+          <svg>
+            <use xlink:href="img/svg/sprite.svg#profile"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="header__btns-service btns-service">
+        <button class="btn" type="button">
+          <span>Оставить заявку</span>
+          <svg>
+            <use xlink:href="img/svg/sprite.svg#repair"></use>
+          </svg>
+        </button>
+        <button class="btn" type="button">
+          <span>Статус ремонта</span>
+          <svg>
+            <use xlink:href="img/svg/sprite.svg#checkstatus"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero__container container-2">
+        <h1 class="hero__heading heading-1">Услуги и сервисы</h1>
+        <nav class="hero__nav services">
+          <ul class="services__list list-reset">
+            <li class="services__item services__item--active">
+              <a href="#" class="services__link">Ремонтируемые устройства</a>
+            </li>
+            <li class="services__item">
+              <a href="#" class="services__link">Дополнительные услуги</a>
+            </li>
+            <li class="services__item">
+              <a href="#" class="services__link">Цены на услуги</a>
+            </li>
+            <li class="services__item">
+              <a href="#" class="services__link">Специальные цены</a>
+            </li>
+            <li class="services__item">
+              <a href="#" class="services__link">Адреса сервисных центров</a>
+            </li>
+            <li class="services__item">
+              <a href="#" class="services__link">Отзывы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <section class="describe">
+      <div class="describe__container container-2">
+        <div class="describe__content">
+          <div class="describe__parag">
+            <p class="describe__text">
+              Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у&nbsp;нас вы
+              можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+            </p>
+            <p id="more">
+              Мы успешно работаем с 1992 года и заслужили репутацию надежного
+              партнера
+              , что подтверждает
+              большое
+              количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+              очередь,
+              советуют нас родным и близким.
+            </p>
+          </div>
+          <button id="describe-btn" class="describe__button-read btn-read btn" type="button">
+            <span class="btn-read__icon"></span>
+            <span>Читать далее</span>
+          </button>
+        </div>
+        <div class="describe__image">
+          <img src="img/cps-photo.png" alt="Фотография компании">
+        </div>
+      </div>
+    </section>
+
+    <section class="brands">
+      <div class="brands__title heading-2">
+        <h2 class="brands__heading heading-2__name">
+          Ремонт техники различных брендов
+        </h2>
+      </div>
+      <div class="brands__collection swiper">
+        <ul class="brands__list list-reset swiper-wrapper">
+          <li class="brands__item swiper-slide">
+            <a href="#" class="brand-card">
+              <img class="brand-card__image" src="img/lenovo-logo.png" alt="Логотип компании леново">
+              <svg class="brand-card__button">
+                <use xlink:href="img/svg/sprite.svg#arrow-logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="brands__item swiper-slide">
+            <a href="#" class="brand-card">
+              <img class="brand-card__image" src="img/samsung-logo.png" alt="Логотип компании самсунг">
+              <svg class="brand-card__button">
+                <use xlink:href="img/svg/sprite.svg#arrow-logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="brands__item swiper-slide">
+            <a href="#" class="brand-card">
+              <img class="brand-card__image logo-width-3" src="img/apple-logo.png" alt="Логотип компании эпл">
+              <svg class="brand-card__button">
+                <use xlink:href="img/svg/sprite.svg#arrow-logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="brands__item swiper-slide">
+            <a href="#" class="brand-card">
+              <img class="brand-card__image logo-width" src="img/viewsonic-logo.png" alt="Логотип компании вьюсоник">
+              <svg class="brand-card__button">
+                <use xlink:href="img/svg/sprite.svg#arrow-logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="brands__item swiper-slide">
+            <a href="#" class="brand-card">
+              <img class="brand-card__image logo-width" src="img/bosch-logo.png" alt="Логотип компании бош">
+              <svg class="brand-card__button">
+                <use xlink:href="img/svg/sprite.svg#arrow-logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="brands__item swiper-slide">
+            <a href="#" class="brand-card">
+              <img class="brand-card__image logo-width-3" src="img/hp-logo.png" alt="Логотип компании леново эйчпи">
+              <svg class="brand-card__button">
+                <use xlink:href="img/svg/sprite.svg#arrow-logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="brands__item swiper-slide">
+            <a href="#" class="brand-card">
+              <img class="brand-card__image logo-width-2" src="img/acer-logo.png" alt="Логотип компании асер">
+              <svg class="brand-card__button">
+                <use xlink:href="img/svg/sprite.svg#arrow-logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="brands__item swiper-slide">
+            <a href="#" class="brand-card">
+              <img class="brand-card__image logo-width" src="img/sony-logo.png" alt="Логотип компании сони">
+              <svg class="brand-card__button">
+                <use xlink:href="img/svg/sprite.svg#arrow-logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="brands__item swiper-slide">
+            <a href="#" class="brand-card">
+              <img class="brand-card__image" src="img/lenovo-logo.png" alt="Логотип компании леново">
+              <svg class="brand-card__button">
+                <use xlink:href="img/svg/sprite.svg#arrow-logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="brands__item swiper-slide">
+            <a href="#" class="brand-card">
+              <img class="brand-card__image" src="img/samsung-logo.png" alt="Логотип компании самсунг">
+              <svg class="brand-card__button">
+                <use xlink:href="img/svg/sprite.svg#arrow-logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="brands__item swiper-slide">
+            <a href="#" class="brand-card">
+              <img class="brand-card__image logo-width-3" src="img/apple-logo.png" alt="Логотип компании эпл">
+              <svg class="brand-card__button">
+                <use xlink:href="img/svg/sprite.svg#arrow-logo"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="brands__btn">
+        <button id="brands-btn" class="btn-read btn" type="button">
+          <span class="btn-read__icon"></span>
+          <span>Показать все</span>
+        </button>
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>

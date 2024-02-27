@@ -1,0 +1,50 @@
+.btns-service {
+  @media (min-width: 1119px) {
+    display: flex;
+    gap: 18px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -22px;
+    display: block;
+    width: 2px;
+    height: 32px;
+    background-color: $grey-element-color;
+
+    @media (min-width: 1119px) {
+      display: none;
+    }
+  }
+
+  button {
+    @media (min-width: 1119px) {
+      display: flex;
+      align-items: center;
+      width: 173px;
+    }
+  }
+
+  button span {
+    display: none;
+
+    @media (min-width: 1119px) {
+      display: block;
+      min-width: max-content;
+      margin-right: 10px;
+      transition: color 0.2s ease-in-out;
+    }
+  }
+
+  button:hover span {
+    @media (min-width: 1119px) {
+      color: #ff3e79;
+    }
+  }
+
+  button:not(:last-child) {
+    margin-right: 12px;
+  }
+}

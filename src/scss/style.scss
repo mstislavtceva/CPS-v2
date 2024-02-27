@@ -1,17 +1,29 @@
-$bgColor: #24292e;
-$text: #fff;
+// Vendors and configuration
+@import 'base/variables';
+@import 'base/normalize';
 
-@font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
+// Base stuff
+@import 'base/base';
+@import 'base/fonts';
+@import 'base/typography';
+@import 'base/heplers';
 
-body {
-  padding: 1rem;
-  margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
-}
+// Layout sections
+@import 'layout/sidebar';
+@import 'layout/header';
+@import 'layout/hero';
+@import 'layout/describe';
+@import 'layout/brands';
+
+// Components
+@import 'components/heading';
+@import 'components/nav-services';
+@import 'components/link-mail';
+@import 'components/link-tel';
+@import 'components/lang-block';
+@import 'components/btns-service';
+@import 'components/services';
+@import 'components/button-read';
+@import 'components/heading-2';
+@import 'components/brand-card';
+@import 'components/swiper';

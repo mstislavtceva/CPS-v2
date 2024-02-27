@@ -1,0 +1,37 @@
+.brand-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid $grey-element-color;
+  border-radius: 6px;
+  padding: 16px;
+  width: 240px;
+  height: 72px;
+  background: $white-color;
+  transition: border 0.2s ease-in-out;
+
+  &:hover {
+    border: 1px solid $pink-light-color;
+  }
+
+  svg {
+    fill: transparent;
+    transition: fill 0.2s ease-in-out;
+  }
+
+  &:hover svg {
+    fill: $pink-light-color;
+  }
+
+  &__image {
+    display: block;
+    width: auto;
+    height: 32px;
+    object-fit: contain;
+  }
+
+  &__button {
+    width: 40px;
+    height: 40px;
+  }
+}

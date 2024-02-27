@@ -1,0 +1,53 @@
+.container {
+  margin: 0 auto;
+  padding: 0 16px;
+
+  @media (min-width: 767px) and (max-width: 1200px) {
+    padding: 0 24px;
+  }
+}
+
+.container-2 {
+  @media (min-width: 767px) and (max-width: 1200px) {
+    padding: 0 0 0 10px;
+  }
+
+  @media (min-width: 1119px) {
+    padding: 0 0 0 17px;
+  }
+}
+
+.btn {
+  border: none;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// Переместить выше по стилям, их не видно
+// .logo-width {
+//   width: 128px;
+// }
+
+// .logo-width-2 {
+//   width: 94px;
+// }
+
+// .logo-width-3 {
+//   width: 45px;
+//   height: 45px;
+// }
+
+#more {
+  @media (min-width: 1119px) {
+    display: inline;
+  }
+}

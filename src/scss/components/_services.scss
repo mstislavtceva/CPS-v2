@@ -1,0 +1,36 @@
+.services {
+  &__list {
+    display: flex;
+    overflow: scroll;
+
+    @media (min-width: 1060px) {
+      overflow: hidden;
+      flex-wrap: wrap;
+    }
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+  }
+
+  &__item a {
+    display: block;
+    padding: 6px 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    white-space: nowrap;
+    color: $grey-main-color;
+    transition: color 0.2s ease-in-out;
+  }
+
+  &__item:hover a {
+    color: $black-main-color;
+  }
+
+  &__item--active a {
+    border-radius: 6px;
+    border: 2px solid $green-element-color;
+  }
+}

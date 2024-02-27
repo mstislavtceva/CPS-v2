@@ -1,0 +1,18 @@
+.mail-link {
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.1px;
+
+  &::after {
+    content: '';
+    width: 0;
+    height: 1px;
+    display: block;
+    background-color: currentColor;
+    transition: width 0.2s ease-in;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
