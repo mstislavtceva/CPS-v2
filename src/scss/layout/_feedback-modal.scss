@@ -1,0 +1,98 @@
+.feedback {
+  display: none;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+    -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 320px;
+  height: 100%;
+  background-color: $white-color;
+  z-index: 2;
+
+  @media (min-width: 1440px) {
+    width: 440px;
+  }
+
+  &__container {
+    padding: 24px 16px;
+
+    @media (min-width: 1440px) {
+      padding: 40px 32px;
+    }
+  }
+
+  &__btn-close {
+    margin-bottom: 35px;
+    border-radius: 20px;
+    background-color: $pink-color;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+
+    @media (min-width: 1440px) {
+      position: absolute;
+      top: 40px;
+      left: -70px;
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &__form {
+    margin-bottom: 9px;
+  }
+
+  &__privacy {
+    margin-bottom: 18px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.6px;
+    color: $grey-main-color;
+
+    p {
+      max-width: 95%;
+    }
+
+    a {
+      color: $pink-color;
+      cursor: pointer;
+    }
+  }
+
+  &__btn-send {
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+      padding: 4px 18px 4px 26px;
+      font-size: 10px;
+      letter-spacing: 0.4px;
+    }
+  }
+}
+
+.feedback .feedback__heading {
+  margin-bottom: 18px;
+  font-size: 24px;
+  line-height: 43px;
+  letter-spacing: 0;
+}
+
+.feedback__heading.heading-2::before {
+  @media (min-width: 768px) {
+    left: -17px;
+  }
+
+  @media (min-width: 1440px) {
+    left: -32px;
+  }
+}

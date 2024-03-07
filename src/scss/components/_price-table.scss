@@ -1,0 +1,131 @@
+.price-table {
+  margin: 0 auto;
+  width: 94%;
+
+  &__head {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    width: 96%;
+
+    span:first-child {
+      width: 54%;
+
+      @media (min-width: 1119px) {
+        width: 47%;
+      }
+    }
+
+    span:nth-child(2) {
+      width: 14%;
+
+      @media (min-width: 1119px) {
+        width: 22%;
+      }
+    }
+
+    span:last-child {
+      width: 32%;
+
+      @media (min-width: 1119px) {
+        width: 31%;
+      }
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    background-color: $white-color;
+  }
+
+  &__row {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    padding: 16px;
+    padding-bottom: 8px;
+
+    @media (min-width: 1119px) {
+      padding: 19px;
+      padding-left: 22px;
+      padding-bottom: 5px;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: 15px;
+      height: 1px;
+      width: 95%;
+      background-color: $grey-element-color;
+    }
+
+    &:last-child::after {
+      display: none;
+    }
+  }
+
+  &__name {
+    width: 54%;
+
+    @media (min-width: 1119px) {
+      width: 47%;
+    }
+  }
+
+  &__rub {
+    width: 14%;
+
+    @media (min-width: 1119px) {
+      width: 22%;
+    }
+  }
+
+  &__time {
+    width: 15%;
+
+    @media (min-width: 1119px) {
+      width: 19%;
+    }
+  }
+
+  &__btn {
+    width: 17%;
+
+    @media (min-width: 1119px) {
+      width: 12%;
+    }
+  }
+}
+
+.price-btn {
+  display: flex;
+  align-items: center;
+  padding: 4px 16px 4px 11px;
+  border-radius: 16px;
+  width: auto;
+  height: auto;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: -0.15px;
+  text-align: left;
+  text-transform: uppercase;
+  color: $white-color;
+  background-color: $pink-color;
+
+  svg {
+    margin-left: 20px;
+    width: 7px;
+    height: 10px;
+    transform: translateX(0);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  &:hover svg {
+    transform: translateX(5px);
+  }
+}

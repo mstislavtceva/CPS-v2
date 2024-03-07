@@ -1,11 +1,13 @@
 .header {
+  border-bottom: 1px solid $green-lighter-element-color;
   padding-top: 16px;
   padding-bottom: 16px;
   background-color: $white-color;
 
-  @media (min-width: 1119px) {
+  @media (min-width: 1440px) {
     position: relative;
-    padding-top: 41px;
+    border-bottom: none;
+    padding-top: 35px;
     background-color: initial;
     z-index: 1;
   }
@@ -14,7 +16,7 @@
     display: flex;
     align-items: center;
 
-    @media (min-width: 1119px) {
+    @media (min-width: 1440px) {
       padding: 0 27px 0 31px;
     }
   }
@@ -22,13 +24,13 @@
   &__burger-btn {
     margin-right: 16px;
 
-    @media (min-width: 767px) and (max-width: 1200px) {
+    @media (min-width: 767px) and (max-width: 1440px) {
       position: relative;
       margin-right: 42px;
     }
 
     &::after {
-      @media (min-width: 767px) and (max-width: 1200px) {
+      @media (min-width: 767px) and (max-width: 1440px) {
         content: '';
         position: absolute;
         top: 5px;
@@ -44,7 +46,7 @@
   &__btns-contact {
     display: none;
 
-    @media (min-width: 767px) and (max-width: 1200px) {
+    @media (min-width: 767px) and (max-width: 1440px) {
       display: flex;
       gap: 16px;
       margin-left: auto;
@@ -55,11 +57,11 @@
     position: relative;
     margin-left: auto;
 
-    @media (min-width: 767px) and (max-width: 1200px) {
+    @media (min-width: 767px) and (max-width: 1440px) {
       margin-left: 42px;
     }
 
-    @media (min-width: 1119px) {
+    @media (min-width: 1440px) {
       margin: 0;
       margin-left: auto;
     }
@@ -83,7 +85,7 @@
   }
 }
 
-@media (min-width: 1119px) {
+@media (min-width: 1440px) {
   .header__container .header__burger-btn,
   .header__container .header__logo,
   .header__container .header__btns-contact {

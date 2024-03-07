@@ -1,0 +1,27 @@
+.heading-3 {
+  border-top: 1px solid $green-lighter-element-color;
+  padding: 14px 16px;
+  background-image: linear-gradient(
+    -270deg,
+    rgb(248, 248, 248),
+    rgb(255, 255, 255) 98.614%
+  );
+
+  @media (min-width: 767px) and (max-width: 1200px) {
+    padding: 14px 23px;
+  }
+
+  @media (min-width: 1119px) {
+    padding-left: 31px;
+  }
+
+  &__name {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.4px;
+    text-transform: uppercase;
+    color: $grey-main-color;
+  }
+}

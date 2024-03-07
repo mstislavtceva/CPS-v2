@@ -1,0 +1,69 @@
+.price-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $grey-element-color;
+  border-radius: 6px;
+  padding: 16px;
+  // height: 73%;
+  height: 87%;
+  background-color: $white-color;
+
+  &__caption {
+    margin-bottom: 4px;
+  }
+
+  &__desc {
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.7px;
+    color: $black-main-color;
+  }
+
+  &__btn-block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__button {
+    position: relative;
+    align-self: center;
+    border: none;
+    border-radius: 16px;
+    padding: 4px 37px 4px 19px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+    background-color: $pink-color;
+    color: $white-color;
+    cursor: pointer;
+
+    span {
+      position: absolute;
+      top: 10px;
+      right: 16px;
+      display: block;
+      width: 7px;
+      height: 10px;
+      background-image: url('../img/dropdown.svg');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.price-caption {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  color: $grey-main-color;
+}

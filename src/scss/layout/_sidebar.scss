@@ -6,18 +6,19 @@
   top: 0;
   left: 0;
   width: 320px;
-  height: 100vh;
+  height: 100%;
   background-color: $white-color;
   z-index: 2;
 
-  @media (max-height: 667px) {
-    height: 667px;
+  @media (min-width: 1440px) {
+    position: relative;
+    box-shadow: none;
+    max-height: 100%;
   }
 
   &__container {
     display: flex;
     flex-direction: column;
-    height: 100%;
   }
 
   &__header {
@@ -54,6 +55,10 @@
 
   &__close {
     margin-right: 17px;
+
+    @media (min-width: 1440px) {
+      display: none;
+    }
   }
 
   &__logo {
@@ -74,7 +79,7 @@
   }
 
   &__bottom {
-    margin-top: auto;
+    // margin-top: auto;
   }
 
   &__contacts {
@@ -133,4 +138,26 @@
     width: 100%;
     height: 100%;
   }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $white-color;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s ease-in-out, z-index 0.3s ease-in-out;
+}
+
+.open-overlay {
+  opacity: 0.92;
+  z-index: 100;
+}
+
+.open-menu {
+  // display: block;
+  z-index: 200;
 }

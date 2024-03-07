@@ -1,41 +1,32 @@
 import '../scss/style.scss'
-import '../../node_modules/swiper/swiper.scss'
-import '../../node_modules/swiper/modules/pagination.scss'
 
-import Swiper from 'swiper'
-import { Pagination } from 'swiper/modules'
+import modalFunc from './modalBtn.js'
+import burgerFunc from './burger.js'
+import descBtn from './descBtn.js'
 import brandsBtn from './brandsBtn.js'
+import equipBtn from './equipBtn.js'
+import brandsSwiperCard from './brandsSwiper.js'
+import equipSwiperCard from './equipSwiper.js'
+import priceSwiperCard from './priceSwiper.js'
 
-// Инициализация и управление свайпером
-let init = false
-let swiper
+// Вызов слайдера из секции brands
+brandsSwiperCard()
+window.addEventListener('resize', brandsSwiperCard)
 
-function swiperCard() {
-  if (window.innerWidth < 768) {
-    if (!init) {
-      init = true
-      swiper = new Swiper('.swiper', {
-        modules: [Pagination],
+// Вызов слайдера из секции equipment
+equipSwiperCard()
+window.addEventListener('resize', equipSwiperCard)
 
-        // Optional parameters
-        direction: 'horizontal',
-        loop: true,
-        slidesPerView: 'auto',
-        spaceBetween: '16px',
+// Вызов слайдера из секции price
+priceSwiperCard()
+window.addEventListener('resize', priceSwiperCard)
 
-        // If we need pagination
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true
-        }
-      })
-    }
-  } else if (init) {
-    swiper.destroy()
-    init = false
-  }
-}
-swiperCard()
-window.addEventListener('resize', swiperCard)
-
+// Проверка работы
 console.log('Works!')
+
+// Бургер функция
+burgerFunc()
+window.addEventListener('resize', burgerFunc)
+
+// Модалки функция
+modalFunc()

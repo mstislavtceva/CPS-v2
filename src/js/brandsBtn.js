@@ -16,11 +16,14 @@ export default brandsBtn.addEventListener('click', function () {
       lastBrandItem.style.display = 'none'
     }
 
+    brandsBtn.firstElementChild.style.transform = 'rotate(0deg)'
     brandsBtn.lastElementChild.textContent = 'Показать все'
   } else {
     for (let brandItem of brandsItems) {
       brandItem.style.display = 'block'
     }
+
+    brandsBtn.firstElementChild.style.transform = 'rotate(180deg)'
     brandsBtn.lastElementChild.textContent = 'Скрыть'
   }
 })

@@ -1,21 +1,18 @@
 .swiper {
   width: 95%;
-  height: 122px;
 
   @media (min-width: 767px) and (max-width: 1119px) {
-    margin-bottom: 16px;
     width: 97%;
     height: 100%;
   }
 
   @media (min-width: 1119px) {
-    width: 95%;
+    width: 97%;
     height: 100%;
   }
 
   .swiper-slide {
     width: 240px;
-    height: 72px;
 
     @media (min-width: 767px) and (max-width: 1119px) {
       width: 224px;
@@ -34,7 +31,6 @@
   .swiper-pagination-bullets.swiper-pagination-horizontal,
   .swiper-pagination-custom,
   .swiper-pagination-fraction {
-    top: var(--swiper-pagination-top, 87px);
     left: 5px;
   }
 

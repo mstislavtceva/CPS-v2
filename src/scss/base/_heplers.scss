@@ -32,19 +32,18 @@
   list-style: none;
 }
 
-// Переместить выше по стилям, их не видно
-// .logo-width {
-//   width: 128px;
-// }
+.brands .logo-width {
+  width: 128px;
+}
 
-// .logo-width-2 {
-//   width: 94px;
-// }
+.brands .logo-width-2 {
+  width: 94px;
+}
 
-// .logo-width-3 {
-//   width: 45px;
-//   height: 45px;
-// }
+.brands .logo-width-3 {
+  width: 45px;
+  height: 45px;
+}
 
 #more {
   @media (min-width: 1119px) {
