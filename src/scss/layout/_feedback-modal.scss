@@ -24,25 +24,12 @@
 
   &__btn-close {
     margin-bottom: 35px;
-    border-radius: 20px;
-    background-color: $pink-color;
-    opacity: 1;
-    transition: opacity 0.2s ease-in-out;
 
     @media (min-width: 1440px) {
       position: absolute;
       top: 40px;
       left: -70px;
       margin-bottom: 0;
-    }
-
-    &:hover {
-      opacity: 0.7;
-    }
-
-    svg {
-      width: 16px;
-      height: 16px;
     }
   }
 
@@ -94,5 +81,18 @@
 
   @media (min-width: 1440px) {
     left: -32px;
+  }
+}
+
+.btn-close {
+  svg {
+    width: 40px;
+    height: 40px;
+    fill: $pink-color;
+    transition: fill 0.2s ease-in-out;
+  }
+
+  &:hover svg {
+    fill: $pink-light-color;
   }
 }

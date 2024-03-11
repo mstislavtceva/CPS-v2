@@ -11,10 +11,15 @@ const feedOverlay = feedMain.querySelector('.overlay')
 const feedModalOpenBtns = document.querySelectorAll('.message-btn')
 const feedCloseBtn = document.querySelector('#feedback-close')
 
+const menu = document.querySelector('.sidebar')
+
 export default function modalFunc() {
   // По кнопке звонка
   for (let callModalOpenBtn of callModalOpenBtns) {
     callModalOpenBtn.addEventListener('click', function () {
+      menu.style.display = 'none'
+      menu.classList.remove('open-menu')
+
       callModal.style.display = 'block'
       callModal.style.zIndex = '200'
       callOverlay.classList.add('open-overlay')
@@ -23,6 +28,9 @@ export default function modalFunc() {
 
   // По кнопке закрытия звонка
   callCloseBtn.addEventListener('click', function () {
+    menu.style.display = 'block'
+    menu.classList.add('open-menu')
+
     callModal.style.display = 'none'
     callModal.style.zIndex = '2'
     callOverlay.classList.remove('open-overlay')
@@ -30,6 +38,9 @@ export default function modalFunc() {
 
   // По заблюренной области у звонка
   callOverlay.addEventListener('click', function () {
+    menu.style.display = 'block'
+    menu.classList.add('open-menu')
+
     callModal.style.display = 'none'
     callModal.style.zIndex = '2'
     callOverlay.classList.remove('open-overlay')
@@ -38,6 +49,9 @@ export default function modalFunc() {
   // По кнопке заявки
   for (let feedModalOpenBtn of feedModalOpenBtns) {
     feedModalOpenBtn.addEventListener('click', function () {
+      menu.style.display = 'none'
+      menu.classList.remove('open-menu')
+
       feedModal.style.display = 'block'
       feedModal.style.zIndex = '200'
       feedOverlay.classList.add('open-overlay')
@@ -46,6 +60,9 @@ export default function modalFunc() {
 
   // По кнопке закрытия заявки
   feedCloseBtn.addEventListener('click', function () {
+    menu.style.display = 'block'
+    menu.classList.add('open-menu')
+
     feedModal.style.display = 'none'
     feedModal.style.zIndex = '2'
     feedOverlay.classList.remove('open-overlay')
@@ -53,6 +70,9 @@ export default function modalFunc() {
 
   // По заблюренной области у заявки
   feedOverlay.addEventListener('click', function () {
+    menu.style.display = 'block'
+    menu.classList.add('open-menu')
+
     feedModal.style.display = 'none'
     feedModal.style.zIndex = '2'
     feedOverlay.classList.remove('open-overlay')

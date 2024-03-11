@@ -10,6 +10,8 @@ export default describeBtn.addEventListener('click', function () {
       describeText.style.height = '160px'
     } else if (window.innerWidth > 1119 && window.innerWidth < 1390) {
       describeText.style.height = '175px'
+    } else if (window.innerWidth > 1439) {
+      describeText.style.height = '165px'
     }
 
     describeBtn.firstElementChild.style.transform = 'rotate(0deg)'
@@ -21,6 +23,8 @@ export default describeBtn.addEventListener('click', function () {
       describeText.style.height = '90%'
     } else if (window.innerWidth > 1119 && window.innerWidth < 1390) {
       describeText.style.height = '80%'
+    } else if (window.innerWidth > 1439) {
+      describeText.style.height = '70%'
     }
 
     describeBtn.firstElementChild.style.transform = 'rotate(180deg)'

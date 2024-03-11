@@ -14,7 +14,7 @@
     <aside class="sidebar">
       <div class="sidebar__container">
         <div class="sidebar__header">
-          <button class="sidebar__close btn" type="button">
+          <button class="sidebar__close btn-close btn" type="button">
             <svg>
               <use xlink:href="img/svg/sprite.svg#close-btn"></use>
             </svg>
@@ -97,11 +97,10 @@
             <use xlink:href="img/svg/sprite.svg#burger"></use>
           </svg>
         </button>
-        <h1>
-          <a href="#" class="header__logo">
-            <img src="img/cps-logo.svg" alt="Логотип сайта">
-          </a>
-        </h1>
+        <span class="header__decor decoration-elem"></span>
+        <a href="#" class="header__logo">
+          <img src="img/cps-logo.svg" alt="Логотип сайта">
+        </a>
         <div class="header__btns-contact contacts">
           <button class="call-btn contacts__btn btn" type="button">
             <svg>
@@ -137,7 +136,7 @@
     </header>
     <section class="hero">
       <div class="hero__container container-2">
-        <h2 class="hero__heading heading-2">Услуги и сервисы</h2>
+        <h1 class="hero__heading heading-2">Услуги и сервисы</h1>
         <nav class="hero__nav services">
           <ul class="services__list list-reset">
             <li class="services__item services__item--active">
@@ -612,7 +611,7 @@
       <div class="feedback__container">
         <button id="feedback-close" class="feedback__btn-close btn-close btn" type="button">
           <svg>
-            <use xlink:href="img/svg/sprite.svg#btn-close"></use>
+            <use xlink:href="img/svg/sprite.svg#close-btn"></use>
           </svg>
         </button>
         <h2 class="feedback__heading heading-2">Обратная связь</h2>
@@ -621,21 +620,21 @@
           <input type="tel" placeholder="Телефон" required>
           <input type="email" placeholder="Электронная почта" required>
           <textarea placeholder="Сообщение" cols="31" rows="5"></textarea>
+          <div class="feedback__privacy">
+            <p>
+              Нажимая “отправить”, вы даете согласие на <a>обработку персональных данных</a> и соглашаетесь с нашей
+              <a>политикой конфиденциальности</a>
+            </p>
+          </div>
+          <div class="feedback__btn-send">
+            <button class="price-btn btn" type="submit">
+              Отправить
+              <svg>
+                <use xlink:href="img/svg/sprite.svg#arrow-right-2"></use>
+              </svg>
+            </button>
+          </div>
         </form>
-        <div class="feedback__privacy">
-          <p>
-            Нажимая “отправить”, вы даете согласие на <a>обработку персональных данных</a> и соглашаетесь с нашей
-            <a>политикой конфиденциальности</a>
-          </p>
-        </div>
-        <div class="feedback__btn-send">
-          <button class="price-btn btn" type="submit">
-            Отправить
-            <svg>
-              <use xlink:href="img/svg/sprite.svg#arrow-right-2"></use>
-            </svg>
-          </button>
-        </div>
       </div>
     </aside>
     <div class="overlay"></div>
@@ -646,27 +645,27 @@
       <div class="call__container">
         <button id="call-close" class="call__btn-close btn-close btn" type="button">
           <svg>
-            <use xlink:href="img/svg/sprite.svg#btn-close"></use>
+            <use xlink:href="img/svg/sprite.svg#close-btn"></use>
           </svg>
         </button>
         <h2 class="call__heading heading-2">Заказать звонок</h2>
         <form action="#" class="call__form feedback-form">
           <input type="tel" placeholder="Телефон" required>
+          <div class="call__privacy">
+            <p>
+              Нажимая “отправить”, вы даете согласие на <a>обработку персональных данных</a> и соглашаетесь с нашей
+              <a>политикой конфиденциальности</a>
+            </p>
+          </div>
+          <div class="call__btn-send">
+            <button class="price-btn btn" type="submit">
+              Отправить
+              <svg>
+                <use xlink:href="img/svg/sprite.svg#arrow-right-2"></use>
+              </svg>
+            </button>
+          </div>
         </form>
-        <div class="call__privacy">
-          <p>
-            Нажимая “отправить”, вы даете согласие на <a>обработку персональных данных</a> и соглашаетесь с нашей
-            <a>политикой конфиденциальности</a>
-          </p>
-        </div>
-        <div class="call__btn-send">
-          <button class="price-btn btn" type="submit">
-            Отправить
-            <svg>
-              <use xlink:href="img/svg/sprite.svg#arrow-right-2"></use>
-            </svg>
-          </button>
-        </div>
       </div>
     </aside>
     <div class="overlay"></div>
