@@ -10,6 +10,12 @@ const feedModalOpenBtns = document.querySelectorAll('.message-btn')
 const callModalOpenBtn = document.querySelector('.call-btn')
 const messageModalOpenBtn = document.querySelector('.message-btn')
 
+const menuCloseFunc = function () {
+  menu.style.display = 'none'
+  menu.classList.remove('open-menu')
+  menuOverlay.classList.remove('open-overlay')
+}
+
 export default function burgerFunc() {
   if (window.innerWidth < 1440) {
     // По кнопке открытия бургера
@@ -21,33 +27,25 @@ export default function burgerFunc() {
 
     // По кнопке закрытия бургера
     burgerCloseBtn.addEventListener('click', function () {
-      menu.style.display = 'none'
-      menu.classList.remove('open-menu')
-      menuOverlay.classList.remove('open-overlay')
+      menuCloseFunc()
     })
 
     // По заблюренной области у бургера
     menuOverlay.addEventListener('click', function () {
-      menu.style.display = 'none'
-      menu.classList.remove('open-menu')
-      menuOverlay.classList.remove('open-overlay')
+      menuCloseFunc()
     })
 
     // По кнопке звонка
     for (let callModalOpenBtn of callModalOpenBtns) {
       callModalOpenBtn.addEventListener('click', function () {
-        menu.style.display = 'none'
-        menu.classList.remove('open-menu')
-        menuOverlay.classList.remove('open-overlay')
+        menuCloseFunc()
       })
     }
 
     // По кнопке оставить заявку
     for (let feedModalOpenBtn of feedModalOpenBtns) {
       feedModalOpenBtn.addEventListener('click', function () {
-        menu.style.display = 'none'
-        menu.classList.remove('open-menu')
-        menuOverlay.classList.remove('open-overlay')
+        menuCloseFunc()
       })
     }
   } else {

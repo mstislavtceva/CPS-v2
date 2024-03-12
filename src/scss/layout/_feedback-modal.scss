@@ -2,7 +2,7 @@
   display: none;
   box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
     -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   width: 320px;
@@ -16,6 +16,7 @@
 
   &__container {
     padding: 24px 16px;
+    height: 100%;
 
     @media (min-width: 1440px) {
       padding: 40px 32px;
@@ -35,6 +36,12 @@
 
   &__form {
     margin-bottom: 9px;
+    height: 60%;
+    overflow-y: auto;
+
+    @media (min-width: 1440px) {
+      height: 82%;
+    }
   }
 
   &__privacy {

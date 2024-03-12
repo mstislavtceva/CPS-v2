@@ -2,7 +2,7 @@
   display: none;
   box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
     -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 320px;
@@ -19,6 +19,7 @@
   &__container {
     display: flex;
     flex-direction: column;
+    height: 100%;
   }
 
   &__header {
@@ -68,6 +69,11 @@
 
   &__search {
     margin-left: auto;
+  }
+
+  &__body {
+    overflow-y: auto;
+    scrollbar-width: none;
   }
 
   &__nav {
